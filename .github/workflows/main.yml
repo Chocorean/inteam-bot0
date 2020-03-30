@@ -33,4 +33,5 @@ jobs:
           echo "Loading config"
           cp ~/config/inteam-bot0.json ./config.json
           echo "(Re)Starting bot0..."
-          bundle exec ./bot0.rb
+          mkdir logs 2> /dev/null
+          bundle exec ./bot0.rb > logs/latest.log 2> logs/latest.errlog &
