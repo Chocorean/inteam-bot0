@@ -25,7 +25,7 @@ jobs:
     runs-on: [self-hosted, linux]
     needs: [build]
     steps:
-      - uses: actions/chechout@v2
+      - uses: actions/checkout@v2
       - name: Start bot
         run: |
           echo Killing previous instance...,
