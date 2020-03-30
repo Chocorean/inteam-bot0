@@ -30,5 +30,7 @@ jobs:
         run: |
           echo Killing previous instance...,
           kill $(pgrep -f bot0.rb) 2> /dev/null && echo Instance killed.
+          echo "Loading config"
+          cp ~/config/inteam-bot0.json ./config.json
           echo "(Re)Starting bot0..."
           bundle exec ./bot0.rb
