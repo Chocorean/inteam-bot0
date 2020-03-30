@@ -1,2 +1,8 @@
 install:
-	gem install discordrb -n /usr/local/bin
+	bundle install
+
+check:
+	echo "TODO"
+
+clean:
+	echo "TODO"

@@ -3,6 +3,7 @@
 # frozen_string_literal: true
 
 require 'discordrb'
+require 'json'
 
 def signature(cmd)
   msg = "Usage: `!#{cmd[1..-1]}"
@@ -23,8 +24,11 @@ def _poireau(event)
   event.send('jrv')
 end
 
+config_file = File.read("config.json")
+config = JSON.parse(config_file)['bot']
+
 bot = Discordrb::Bot.new(
-  token: 'NjkyNzUyNDY3MjA0NzY3Nzk0.XnzIaQ.mDL7gQ1yZDPDLMaCrpg5ogL-iGg'
+  token: config['token']
 )
 
 bot.ready do
