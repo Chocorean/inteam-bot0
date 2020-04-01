@@ -1,0 +1,18 @@
+{
+  "bot": {
+    "token": "your_token_here",
+    "prefix": "!",
+    "channels" : [
+      "#x",
+      "#y",
+      "#z"
+    ],
+    "ignore_bots": false
+  },
+  "i18n": {
+    "command_doesnt_exist": "msg",
+    "ping_output": "mdr t ki?",
+    "poireau_no_channel": "You're not in any voice channel!"
+  }
+}
+
