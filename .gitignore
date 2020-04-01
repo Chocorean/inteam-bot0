@@ -1,1 +1,6 @@
-config.json
+# editors
+*.swp
+.vscode
+
+# project related
+data/config.json
